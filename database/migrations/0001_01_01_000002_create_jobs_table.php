@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        /*
+        
         Schema::create('jobs', function (Blueprint $table) {
             $table->id();
             $table->string('queue')->index();
@@ -44,7 +44,7 @@ return new class extends Migration
             $table->longText('exception');
             $table->timestamp('failed_at')->useCurrent();
         });
-        */
+        
     }
 
     /**
@@ -52,10 +52,10 @@ return new class extends Migration
      */
     public function down(): void
     {
-        /*
+        
         Schema::dropIfExists('jobs');
         Schema::dropIfExists('job_batches');
         Schema::dropIfExists('failed_jobs');
-        */
+        
     }
 };
