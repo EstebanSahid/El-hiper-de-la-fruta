@@ -8,7 +8,7 @@ use App\Http\Controllers\PedidoController;
 use App\Http\Controllers\ProductoController;
 
 /* LOGIN */
-Route::get('/', LoginController::class);
+Route::get('/', [LoginController::class, 'autenticacion']);
 
 /* USUARIOS */
 Route::controller(UsuarioController::class)->group(function() {
